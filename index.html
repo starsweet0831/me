@@ -46,8 +46,8 @@
     </div>
 
     <!-- 最新消息 -->
-    <section id="news">
-        <h1>最新消息</h1>
+    <section id="news" >
+        <h1 class=" title-big">最新消息</h1>
         <div id="news-content">
             <div class="news-card">
                 <img src="./img/news_1.jpg" alt="">
@@ -69,6 +69,44 @@
             </div>
         </div>
     </section>
+
+    <!-- 最新作品 -->
+    <!-- #works>(.work-card>img+h2{標題二})*6 -->
+    <div id="works">
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+        <div class="work-card">
+            <img src="" alt="">
+            <h2>標題二</h2>
+        </div>
+    </div>
+
+    <h1 class="title-big">聯絡我</h1>
+    <!-- 表單元素 action 傳遞給後端頁面，通常是XXX.php -->
+    <form action="">
+        <input type="text" name="user-name" placeholder="請輸入您的名字" required>
+        <input type="eamil" name="user-email" placeholder="請輸入您的Email" required>
+        <textarea placeholder="請輸入您想對我說的話"></textarea>
+        <input type="submit" value="送出">
+    </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
