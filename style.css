@@ -8,6 +8,30 @@
           box-sizing: border-box;
 }
 
+#menu {
+  background-image: url(./img/meun.png);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #menu {
+    display: block;
+    margin: 0 10px 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menu {
+    margin: 0 20px 0 auto;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 nav {
   display: -ms-grid;
   display: grid;
@@ -21,6 +45,19 @@ nav {
   position: fixed;
   z-index: 3;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    -ms-grid-columns: 100% 0;
+        grid-template-columns: 100% 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav #link {
+    display: none;
+  }
 }
 
 nav #link a {
@@ -38,6 +75,12 @@ nav #link a:hover {
   color: #aaa;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  nav #social {
+    display: none;
+  }
 }
 
 nav #social a {
@@ -112,9 +155,31 @@ nav #social a img {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner1 h1 {
+    padding: 550px 0 50px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner1 h1 {
+    padding: 300px 0 50px 20px;
+    font-size: 32px;
+  }
+}
+
 #banner .banner1 h2 {
   font-size: 24px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner1 h2 {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
 #banner .banner2 {
@@ -136,9 +201,31 @@ nav #social a img {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner2 h1 {
+    padding: 550px 0 50px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner2 h1 {
+    padding: 300px 0 50px 20px;
+    font-size: 32px;
+  }
+}
+
 #banner .banner2 h2 {
   font-size: 24px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner2 h2 {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
 #banner .banner3 {
@@ -160,9 +247,31 @@ nav #social a img {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner3 h1 {
+    padding: 550px 0 50px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner3 h1 {
+    padding: 300px 0 50px 20px;
+    font-size: 32px;
+  }
+}
+
 #banner .banner3 h2 {
   font-size: 24px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner3 h2 {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
 #news {

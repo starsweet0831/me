@@ -5,6 +5,8 @@ $color-white: #f8f8f8;
 $color-black: #252525;
 $text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 $box-shawod: 0 5px 10px rgba(0, 0, 0, 0.5);
+$tablet: 1024px;
+$mobile: 767px;
 
 * {
     margin: 0;
@@ -14,6 +16,27 @@ $box-shawod: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 // 導覽列
+#menu{
+    background-image: url(./img/meun.png);
+    width: 32px;
+    height: 32px;
+    // 手指
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+        margin: 0 10px 0 auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 20px 0 auto;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 nav {
     display: grid;
     grid-template-columns: 15% auto 15%;
@@ -25,7 +48,16 @@ nav {
     z-index: 3;
     width: 100%;
 
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 100% 0;
+    }
+
     #link {
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+        
         a {
             color: $color-black;
             text-decoration: none;
@@ -43,6 +75,11 @@ nav {
     }
 
     #social {
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+
         a {
             transition: 0.3s;
             padding: 0 10px;
@@ -99,6 +136,10 @@ nav {
             text-align: center;
             color: $color-white;
             background-size: cover;
+
+            // @media screen and (max-width: $tablet) {
+                // background-size: cover;
+            // }
     
             &:focus {
                 outline: none;
@@ -109,11 +150,27 @@ nav {
                 font-size: 72px;
                 letter-spacing: 20px;
                 text-shadow: $text-shadow;
+
+                @media screen and (max-width: $tablet) {
+                    padding: 550px 0 50px 20px;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    padding: 300px 0 50px 20px;
+                    font-size: 32px;
+                }
             }
     
             h2 {
                 font-size: 24px;
                 text-shadow: $text-shadow;
+
+                @media screen and (max-width: $mobile) {
+                    font-size: 20px;
+                    width: 80%;
+                    margin: 0 auto;
+                    line-height: 1.5;
+                }
             }
         }
     }
