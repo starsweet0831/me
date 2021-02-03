@@ -279,12 +279,27 @@ nav #social a img {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  #news {
+    width: 100%;
+    padding: 50px 20px;
+  }
+}
+
 #news #news-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #news #news-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 }
 
 #news #news-content img {
@@ -302,6 +317,52 @@ nav #social a img {
   line-height: 1.5;
   font-size: 14px;
   padding: 10px 30px 30px;
+}
+
+#works {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #works {
+    width: 100%;
+  }
+}
+
+#works .work-card {
+  text-align: center;
+}
+
+#works .work-card:focus {
+  outline: none;
+}
+
+#works .work-card img {
+  width: 230px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#works .work-card img:hover {
+  border-radius: 20px;
+}
+
+#works .work-card h2 {
+  padding: 20px 0;
+}
+
+#works .work-card small {
+  color: #aaa;
 }
 
 form {

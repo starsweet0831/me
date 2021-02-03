@@ -181,10 +181,20 @@ nav {
     width: 1280px;
     margin: 0 auto;
 
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
     #news-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
 
         img {
             width: 100%;
@@ -201,6 +211,48 @@ nav {
             font-size: 14px;
             padding: 10px 30px 30px;
 
+        }
+    }
+}
+
+// 最新作品
+#works {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
+
+    .work-card {
+        text-align: center;
+
+        &:focus {
+            outline: none;
+        }
+
+        img {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            transition: 0.6s;
+            box-shadow: $box-shawod;
+
+            &:hover {
+                border-radius: 20px;
+            }
+        }
+
+        h2 {
+            padding: 20px 0;
+        }
+
+        small {
+            color: $color-gray;
         }
     }
 }
