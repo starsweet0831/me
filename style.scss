@@ -220,6 +220,8 @@ nav {
     width: 1280px;
     margin: 0 auto;
     padding: 100px 0;
+    // 溢出:隱藏
+    overflow: hidden;
 
     @media screen and (max-width: $tablet) {
         width: 100%;
@@ -261,10 +263,21 @@ nav {
 form {
     width: 1280px;
     margin: 0 auto;
+    padding: 20px 0 100px;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+        padding: 20px 20px 100px;
+    }
 
     input {
         width: 49%;
         padding: 10px ;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
         ::placeholder {
             color: $color-gray;
@@ -302,9 +315,16 @@ form {
         color: $color-gray;
     }
 }
+// 大標題樣式
 .title-big {
     text-align: center;
     padding: 10px 0 30px;
     font-size: 30px;
     font-weight: 900;
+}
+
+footer{
+    background-color: $color-gray;
+    padding: 50px 0;
+    text-align: center;
 }

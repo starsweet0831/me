@@ -323,6 +323,7 @@ nav #social a img {
   width: 1280px;
   margin: 0 auto;
   padding: 100px 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -368,11 +369,26 @@ nav #social a img {
 form {
   width: 1280px;
   margin: 0 auto;
+  padding: 20px 0 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  form {
+    width: 100%;
+    padding: 20px 20px 100px;
+  }
 }
 
 form input {
   width: 49%;
   padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  form input {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 form input ::-webkit-input-placeholder {
@@ -428,5 +444,11 @@ form textarea {
   padding: 10px 0 30px;
   font-size: 30px;
   font-weight: 900;
+}
+
+footer {
+  background-color: #aaa;
+  padding: 50px 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
